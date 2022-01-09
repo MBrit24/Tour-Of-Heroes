@@ -22,6 +22,7 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
+    enculer
     this.heroService
       .getHeroes()
       .subscribe((allHeroes: Hero[]) => (this.heroes = allHeroes));

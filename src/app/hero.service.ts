@@ -10,6 +10,7 @@ export class HeroService {
   constructor() {}
 
   getHeroes(): Observable<Hero[]> {
+    console.log(HEROES[0].name);
     return of(HEROES);
   }
 }
